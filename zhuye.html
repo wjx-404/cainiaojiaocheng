@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>菜鸟教程</title>
+    <!-- Bootstrap -->
+    <link href="public/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/zhuye.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!--  头部 -->
+    <div class="container">
+        <div class="wjx-content">
+            <div class="wjx-logo"><img src="public/images/runoob-logo.png"> </div>
+            <div class="col search row-search-mobile wjx-search">
+                <form>
+                    <input class="placeholder" value="搜索……" name="s" autocomplete="off">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 导航栏 -->
+    <div class="wjx-nav">
+        <div class="container navigation">
+            <div class="row">
+                <div class="col nav">
+                    <ul id="index-nav">
+                        <li class='y navter navgo'><a href="#" data-id="index" title="菜鸟教程" class="current">首页</a></li>
+                        <li class='j navter navgo'><a href="#" target="_blank" data-id="note" title="菜鸟笔记">菜鸟笔记</a></li>
+                        <li class='g navter navgo'><a href="#" target="_blank" data-id="tool" title="不止于工具">菜鸟工具</a></li>
+                        <li class='c navter'><a href="#" data-id="manual" title="参考手册">参考手册</a></li>
+                        <li class='s navter'><a href="#" data-id="quiz" title="测验/考试">测验/考试</a></li>
+                        <li class='entera navter navgo'>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" style="padding-top:10px;font-size:12px;">登录</button>
+
+                            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <ul>
+                                            <li class="pull-left">
+                                                <a href="JavaScript:;" class='zh'>用户登录</a>
+                                            </li>
+                                            <li class="pull-right">
+                                                <a href="JavaScript:;" class='zhuc'>注册新用户</a>
+                                            </li>
+                                        </ul>
+                                        <div class="den">
+
+                                            <div class="users">
+                                                <span class="glyphicon glyphicon-user" style="padding-left:10px;"></span>
+                                                <input type="text" placeholder="请输入用户名" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="pass">
+                                                <span class="glyphicon glyphicon-wrench" style="padding-left:10px;"></span>
+                                                <input type="text" placeholder="请输入密码" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="fieldset">
+                                                <input type="checkbox" id="remember-me" checked>
+                                                <label for="remember-me">记住登录状态</label>
+                                                <a href="JavaScript:;" target="_blank" class='wang'>忘记密码？</a>
+                                            </div>
+                                            <div class="en">
+                                                <a href="JavaScript:;" class='lu'>登录</a>
+                                            </div>
+                                        </div>
+                                        <div class="zhuce">
+                                            <div class="yaoqing">
+                                                <span class="glyphicon glyphicon-wrench" style="padding-left:10px;"></span>
+                                                <input type="text" placeholder="请输入邀请码" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="userse">
+                                                <span class="glyphicon glyphicon-user" style="padding-left:10px;"></span>
+                                                <input type="text" placeholder="请输入用户名" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="email">
+                                                <span class="glyphicon glyphicon-envelope" style="padding-left:10px;"></span>
+                                                <input type="text" placeholder="请输入邮箱" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="password">
+                                                <span class="glyphicon glyphicon-wrench" style="padding-left:10px;"></span>
+                                                <input type="text" placeholder="请输入密码" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="password-again">
+                                                <span class="glyphicon glyphicon-wrench" style="padding-left:10px;"></span>
+                                                <input type="text" placeholder="请再输入密码" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="zc">
+                                                <a href="JavaScript:;" class='zcx'>注册新用户</a>
+                                            </div><br>
+                                            <span class='how'>如何获取邀请码？</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <ul class="sanjiao">
+                        <li class='wjx-sy triangle'></li>
+                        <li class='wjx-bj triangle'></li>
+                        <li class='wjx-gj triangle'></li>
+                        <li class='wjx-ck triangle'></li>
+                        <li class='wjx-cy triangle'></li>
+                        <li class='wjx-en triangle'></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wjx-xxk">
+        <div class="wjx-xl">
+            <ul id="wjx-sc">
+                <li class="cat-item "><a href="# " target="_blank ">HTML 手册</a></li>
+                <li class="cat-item "><a href="# " target="_blank ">Javascript </a></li>
+                <li class="cat-item "><a href="# " target="_blank ">CSS 1,2,3</a></li>
+                <li class="cat-item "><a href="# ">Zepto 中文手册</a></li>
+                <li class="cat-item "><a href="# ">Flat UI</a></li>
+                <li class="cat-item "><a href="# ">PostgreSQL 手册</a></li>
+            </ul>
+            <ul id="wjx-ks">
+                <li class="cat-item "><a target="_top " title="HTML 测验 " href="JavaScript:;">HTML 测验</a></li>
+                <li class="cat-item "><a target="_top " title="HTML5 测验 " href="JavaScript:;">HTML5 测验</a></li>
+                <li class="cat-item "><a target="_top " title="XHTML 测验 " href="JavaScript:;">XHTML 测验</a></li>
+                <li class="cat-item "><a target="_top " title="CSS 测验 " href="JavaScript:;">CSS 测验</a></li>
+                <li class="cat-item "><a target="_top " title="JavaScript 测验 " href="JavaScript:;">JavaScript 测验</a></li>
+                <li class="cat-item "><a target="_top " title="jQuery 测验 " href="JavaScript:;">jQuery 测验</a></li>
+                <li class="cat-item "><a target="_top " title="XML 测验 " href="JavaScript:;">XML 测验</a></li>
+                <li class="cat-item "><a target="_top " title="ASP 测验 " href="JavaScript:;">ASP 测验</a></li>
+                <li class="cat-item "><a target="_top " title="PHP 测验 " href="JavaScript:;">PHP 测验</a></li>
+                <li class="cat-item "><a target="_top " title="SQL 测验 " href="JavaScript:;">SQL 测验</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content ">
+        <div class="container">
+            <div class="left">
+                <div class="tab"><i class="glyphicon glyphicon-th-list "></i> 全部教程</div>
+                <div class="wjx-box wjx-list">
+                    <div class="deg" id="cat1">
+                        <div class="wjxnav-nav"><i class="glyphicon glyphicon-new-window "></i> HTML / CSS</div>
+                    </div>
+                    <div class="deg" id="cat2">
+                        <div class="wjxnav-nav"><i class="glyphicon glyphicon-new-window "></i> JavaScript</div>
+                    </div>
+                    <div class="deg" id="cat3">
+                        <div class="wjxnav-nav"><i class="glyphicon glyphicon-new-window "></i> 服务端</div>
+                    </div>
+                    <div class="deg" id="cat4">
+                        <div class="wjxnav-nav "><i class="glyphicon glyphicon-new-window "></i> 数据库</div>
+                    </div>
+                    <div class="deg" id="cat5">
+                        <div class="wjxnav-nav"><i class="glyphicon glyphicon-new-window "></i> 移动端</div>
+                    </div>
+                    <div class="deg" id="cat6">
+                        <div class="wjxnav-nav"><i class="glyphicon glyphicon-new-window "></i> XML 教程</div>
+                    </div>
+                    <div class="deg" id="cat7">
+                        <div class="wjxnav-nav "><i class="glyphicon glyphicon-new-window "></i> ASP.NET</div>
+                    </div>
+                    <div class="deg" id="cat8">
+                        <div class="wjxnav-nav"><i class="glyphicon glyphicon-new-window "></i> Web Service</div>
+                    </div>
+                    <div class="deg" id="cat9">
+                        <div class="wjxnav-nav"><i class="glyphicon glyphicon-new-window "></i> 开发工具</div>
+                    </div>
+                    <div class="deg" id="cat10">
+                        <div class="wjxnav-nav"><i class="glyphicon glyphicon-new-window "></i> 网站建设</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right ">
+                <div class="col middle-column-home ">
+                    <div class="codelist codelist-desktop cate1 cater">
+
+                        <h2 style="font-size:18px;font-weight:700;margin-left:25px;"><i class="glyphicon glyphicon-list "></i> HTML / CSS</h2>
+                        <div class="xian " style="border-top:1px solid #ECEAE8;width:95%;margin:10px 0 10px 25px; "></div>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 HTML】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/htmldom.png ">
+                            <strong>HTML，即超文本标记语言（Hyper Text Markup Language）</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 HTML5】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/html5.png ">
+                            <strong>HTML5 是下一代 HTML 标准</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 CSS】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/css.png ">
+                            <strong>层叠样式表（Cascading StyleSheet）</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 CSS3】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/css3.png ">
+                            <strong>CSS3是CSS技术的升级版本</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Bootstrap】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/bootstrap.png ">
+                            <strong>Bootstrap，来自 Twitter，是目前最受欢迎的前端框架</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Font Awesome】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/fontawesome.png ">
+                            <strong>Font Awesome 是一套绝佳的图标字体库和CSS框架。</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 Foundation】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/foundation.png ">
+                            <strong>Foundation 用于开发响应式的 HTML, CSS and JavaScript 框架</strong></a>
+                    </div>
+
+                    <div class="codelist codelist-desktop cate2 cater">
+
+                        <h2 style="font-size:18px;font-weight:700;margin-left:25px;"><i class="glyphicon glyphicon-list "></i> JavaScript</h2>
+                        <div class="xian " style="border-top:1px solid #ECEAE8;width:95%;margin:10px 0 10px 25px; "></div>
+
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 JavaScript】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/js.png ">
+                            <strong>JavaScript 是 Web 的编程语言</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 HTML DOM】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/htmldom.png ">
+                            <strong>HTML DOM 定义了访问和操作 HTML 文档的标准方法</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 jQuery】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/jquerymobile.png ">
+                            <strong>jQuery 是一个 JavaScript 库</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 AngularJS】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/angularjs.png ">
+                            <strong>AngularJS 通过新的属性和表达式扩展了 HTML</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 AngularJS2】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/angularjs2.png ">
+                            <strong>AngularJS2 是一款开源JavaScript库，由Google维护。</strong></a>
+
+                        <a class="item-top item-1 " href="3 ">
+                            <h4>【学习 Vue.js】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/vue.png ">
+                            <strong>Vue.js 是一套构建用户界面的渐进式框架。</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 React】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/react.png ">
+                            <strong>React 是一个用于构建用户界面的 JAVASCRIPT 库</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 jQuery UI】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/jqueryui.png ">
+                            <strong>jQuery UI 是建立在 jQuery上的一组用户界面交互、特效、小部件及主题</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 jQuery EasyUI 】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/jeasyui.png ">
+                            <strong>jQuery EasyUI 是一个基于 jQuery 的框架，集成了各种用户界面插件</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 Node.js】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/nodejs.png ">
+                            <strong>Node.js 是运行在服务端的 JavaScript</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 AJAX】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/ajax.png ">
+                            <strong>AJAX = Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 JSON】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/json.png ">
+                            <strong>JSON 是存储和交换文本信息的语法</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 Highcharts】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/highcharts.png ">
+                            <strong>Highcharts 是一个用纯JavaScript编写的一个图表库</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Google 地图】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/googleapi.png ">
+                            <strong>Google 地图接口使用说明</strong></a>
+                    </div>
+
+                    <div class="codelist codelist-desktop cate3 cater">
+
+                        <h2 style="font-size:18px;font-weight:700;margin-left:25px;"><i class="glyphicon glyphicon-list "></i> 服务端</h2>
+                        <div class="xian " style="border-top:1px solid #ECEAE8;width:95%;margin:10px 0 10px 25px; "></div>
+
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 PHP】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/php.png ">
+                            <strong>PHP 是一种通用开源脚本语言</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Python】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/python.png ">
+                            <strong>Python 是一种面向对象、解释型计算机程序设计语言</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Python3】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/python.png ">
+                            <strong>Python 升级版，变化较大</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 Django】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/django.png ">
+                            <strong>Django是一个开放源代码的Web应用框架，由Python写成</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Linux】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/linux.png ">
+                            <strong>Linux是一套免费使用和自由传播的类Unix操作系统</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Docker】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/docker.png ">
+                            <strong>Docker 是一个开源的应用容器引擎，基于 Go 语言</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 Ruby】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/ruby.png ">
+                            <strong>一种为简单快捷的面向对象编程（面向对象程序设计）而创的脚本语言</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Java】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/java.png ">
+                            <strong>一种可以撰写跨平台应用软件的面向对象的程序设计语言</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 C】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/c.png ">
+                            <strong>一门通用计算机编程语言</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 C++】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/cpp.png ">
+                            <strong>C++是在C语言的基础上开发的一种通用编程语言</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Perl】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/perl.png ">
+                            <strong>Perl 是高级、通用、直译式、动态的程序语言</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Servlet 】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/servlet.png ">
+                            <strong>运行在 Web 服务器或应用服务器上的程序</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 JSP】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/jsp.png ">
+                            <strong>JSP与PHP、ASP、ASP.NET等语言类似，运行在服务端的语言</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Lua】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/lua.png ">
+                            <strong>Lua 是一种轻量小巧的脚本语言，用标准C语言编写并以源代码形式开放</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Scala】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/scala.png ">
+                            <strong>Scala 是一门多范式（multi-paradigm）的编程语言。</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 Go】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/go.png ">
+                            <strong>Go语言是谷歌推出的一种全新的编程语言</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【设计模式】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/design-pattern.png ">
+                            <strong>设计模式代表了最佳的实践，通常被有经验的面向对象的软件开发人员所采用</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【正则表达式】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/regexp.png ">
+                            <strong>正则表达式是对字符串操作的一种逻辑公式</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 ASP】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/asp.png ">
+                            <strong>ASP（Active Server Pages 动态服务器页面）是一种生成动态交互性网页的强有力工具</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 AppML】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/appml.png ">
+                            <strong>AppML 是一个为web应用程序设计的HTML扩展框</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 VBScript】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/vbscript.png ">
+                            <strong>一种微软环境下的轻量级的解释型语言</strong></a>
+                    </div>
+
+                    <div class="codelist codelist-desktop cate4 cater">
+
+                        <h2 style="font-size:18px;font-weight:700;margin-left:25px;"><i class="glyphicon glyphicon-list "></i> 数据库</h2>
+                        <div class="xian " style="border-top:1px solid #ECEAE8;width:95%;margin:10px 0 10px 25px; "></div>
+
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 SQL】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/sql.png ">
+                            <strong>结构化查询语言(Structured Query Language)</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Mysql】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/mysql.png ">
+                            <strong>MySQL是一个关系型数据库管理系统</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 SQLite】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/sqlite.png ">
+                            <strong>一款轻型的数据库</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 MongoDB】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/mongodb.png ">
+                            <strong>Mongo DB 是目前在IT行业非常流行的一种非关系型数据库(NoSql)</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Redis】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/redis.png ">
+                            <strong>一个高性能的key-value数据库</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Memcached】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/Memcached.png ">
+                            <strong>Memcached是一个自由开源的，高性能，分布式内存对象缓存系统。</strong></a>
+                    </div>
+
+                    <div class="codelist codelist-desktop cate5 cater">
+
+                        <h2 style="font-size:18px;font-weight:700;margin-left:25px;"><i class="glyphicon glyphicon-list "></i> 移动端</h2>
+                        <div class="xian " style="border-top:1px solid #ECEAE8;width:95%;margin:10px 0 10px 25px; "></div>
+
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 Android】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/android.png ">
+                            <strong>Android 是一种基于Linux的自由及开放源代码的操作系统，主要使用于移动设备</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Swift】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/swift.png ">
+                            <strong>Swift 是一种支持多编程范式和编译式的编程语言,用于开发 iOS，OS X 和 watchOS应用程序。</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 jQuery Mobile】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/jquerymobile.png ">
+                            <strong>jQuery Mobile是jQuery 在手机上和平板设备上的版本</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 ionic】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/ionic.png ">
+                            <strong>ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App Framework )。</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Kotlin】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/kotlin.png ">
+                            <strong>在 Java 虚拟机上运行的静态类型编程语言，Android 官方开发语言</strong></a>
+                    </div>
+
+                    <div class="codelist codelist-desktop cate6 cater">
+
+                        <h2 style="font-size:18px;font-weight:700;margin-left:25px;"><i class="glyphicon glyphicon-list "></i> XML 教程</h2>
+                        <div class="xian " style="border-top:1px solid #ECEAE8;width:95%;margin:10px 0 10px 25px; "></div>
+
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 XML】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/xml.png ">
+                            <strong>XML 被设计用来传输和存储数据</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 DTD】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/dtd.png ">
+                            <strong>DTD（文档类型定义）的作用是定义 XML 文档的合法构建模块</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 XML DOM】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/xml.png ">
+                            <strong>XML DOM 定义访问和操作XML文档的标准方法</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 XSLT】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/xslt.png ">
+                            <strong>XSL 是一个 XML 文档的样式表语言，XSLT 指 XSL 转换</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 XPath】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/xpath.png ">
+                            <strong>XPath 是一门在 XML 文档中查找信息的语言</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 XQuery】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/xquery.png ">
+                            <strong>XQuery 被设计用来查询 XML 数据</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 XLink】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/xlink.png ">
+                            <strong>XLink 定义在 XML 文档中创建超级链接的标准方法</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 XPointer】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/xpointer.png ">
+                            <strong>XPointer是在可扩展标志语言（XML）文件中定位数据的一种语言</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 XML Schema】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/xslfo.png ">
+                            <strong>XML Schema 描述了 XML文档的结构</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 XSL-FO】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/xslfo.png ">
+                            <strong>XSL-FO 指可扩展样式表语言格式化对象</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 SVG】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/svg.png ">
+                            <strong>SVG 使用 XML 格式定义图像</strong></a>
+                    </div>
+
+                    <div class="codelist codelist-desktop cate7 cater">
+
+                        <h2 style="font-size:18px;font-weight:700;margin-left:25px;"><i class="glyphicon glyphicon-list "></i> ASP.NET</h2>
+                        <div class="xian " style="border-top:1px solid #ECEAE8;width:95%;margin:10px 0 10px 25px; "></div>
+
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 ASP.NET】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/aspnet.png ">
+                            <strong>ASP.NET 是一个使用 HTML、CSS、JavaScript 和服务器脚本创建网页和网站的开发框架</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 C#】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/csharp.png ">
+                            <strong>C# 是一个简单的、现代的、通用的、面向对象的编程语言</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Web Pages】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/webpages.png ">
+                            <strong>Web Pages 是三种网页编程模型中的一种，用于创建网站和web 应用程序</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 Razor】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/aspnet.png ">
+                            <strong>Razor 是一种标记语法，可以让您将基于服务器的代码（Visual Basic 和 C#）嵌入到网页中</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 MVC】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/mvc.png ">
+                            <strong>MVC（Model View Controller 模型-视图-控制器）</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Web Forms】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/webforms.png ">
+                            <strong>Web Forms 是三种创建 ASP.NET 网站和 Web 应用程序的编程模式中的一种</strong></a>
+                    </div>
+
+                    <div class="codelist codelist-desktop cate8 cater">
+
+                        <h2 style="font-size:18px;font-weight:700;margin-left:25px;"><i class="glyphicon glyphicon-list "></i> Web Service</h2>
+                        <div class="xian " style="border-top:1px solid #ECEAE8;width:95%;margin:10px 0 10px 25px; "></div>
+
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 Web Service】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/webservices.png ">
+                            <strong>Web Service 脚本平台需支持 XML + HTTP</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 WSDL】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/wsdl.png ">
+                            <strong>WSDL是一门基于 XML 的语言，用于描述 Web Service 以及如何对它们进行访问</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 SOAP】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/soap.png ">
+                            <strong>SOAP 是一种简单的基于 XML 的协议，它使应用程序通过 HTTP 来交换信息</strong></a>
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 RSS】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/rss.png ">
+                            <strong>RSS基于XML标准，在互联网上被广泛采用的内容包装和投递协议</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 RDF】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/rdf.png ">
+                            <strong>DF(资源描述框架)是描述网络资源的 W3C 标准</strong></a>
+                    </div>
+
+                    <div class="codelist codelist-desktop cate9 cater">
+
+                        <h2 style="font-size:18px;font-weight:700;margin-left:25px;"><i class="glyphicon glyphicon-list "></i> 开发工具</h2>
+                        <div class="xian " style="border-top:1px solid #ECEAE8;width:95%;margin:10px 0 10px 25px; "></div>
+
+
+                        <a class="item-top item-1 " href="# " style="margin-left:25px;">
+                            <h4>【学习 Eclipse】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/eclipse.png ">
+                            <strong>Eclipse 是一个开放源代码的、基于 Java 的可扩展开发平台</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Git】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/git.png ">
+                            <strong>Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目</strong></a>
+
+                        <a class="item-top item-1 " href="# ">
+                            <h4>【学习 Firebug】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/firebug.png ">
+                            <strong>Firebug 是一个开源的web开发工具</strong></a>
+                    </div>
+
+                    <div class="codelist codelist-desktop cate10 cater">
+
+                        <h2 style="font-size:18px;font-weight:700;margin-left:25px;"><i class="glyphicon glyphicon-list "></i> 网站建设</h2>
+                        <div class="xian " style="border-top:1px solid #ECEAE8;width:95%;margin:10px 0 10px 25px; "></div>
+
+
+                        <a class="item-top item-1 " href="JavaScript:; " style="margin-left:25px;">
+                            <h4>【学习 HTTP】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/http.png ">
+                            <strong>HTTP协议（HyperText Transfer Protocol，超文本传输协议）是因特网上应用最为广泛的一种网络传输协议</strong></a>
+
+                        <a class="item-top item-1 " href="JavaScript:; ">
+                            <h4>【网站建设指南】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/webbuildingprimer.png ">
+                            <strong>网站建设指导课程</strong></a>
+
+                        <a class="item-top item-1 " href="JavaScript:; ">
+                            <h4>【浏览器信息】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/browsers.png ">
+                            <strong>对于网站开发人员来说，浏览器信息和统计数据都是非常重要的</strong></a>
+
+                        <a class="item-top item-1 " href="JavaScript:; " style="margin-left:25px;">
+                            <h4>【网站主机教程】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/hosting.png ">
+                            <strong>如果您希望向全世界发布自己的网站，那么您的网站就需要被放置于一个 WEB 服务器</strong></a>
+
+                        <a class="item-top item-1 " href="JavaScript:; ">
+                            <h4>【学习 TCP/IP】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/tcpip.png ">
+                            <strong>TCP/IP 是因特网的通信协议</strong></a>
+
+                        <a class="item-top item-1 " href="JavaScript:; ">
+                            <h4>【学习 W3C】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/w3c.png ">
+                            <strong>W3C 让每个人都能在互联网上分享资源</strong></a>
+
+                        <a class="item-top item-1 " href="JavaScript:; " style="margin-left:25px;">
+                            <h4>【网站品质】</h4>
+                            <img class="codeicon codeicon-36 " height="36 " width="36 " src="public/images/quality.png ">
+                            <strong>学习如何创建高质量的web网站</strong></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 底部 -->
+
+    <div class="footer">
+        <div class="runoob-block ">
+            <div class="runoob cf ">
+                <dl>
+                    <dt>
+                        在线实例
+                        </dt>
+                    <dd>
+                        &middot;<a target="_blank " href="JavaScript:; ">HTML 实例</a>
+                    </dd>
+                    <dd>
+                        &middot;<a target="_blank " href="JavaScript:; ">CSS 实例</a>
+                    </dd>
+                    <dd>
+                        &middot;<a target="_blank " href="JavaScript:; ">JavaScript 实例</a>
+                    </dd>
+                    <dd>
+                        &middot;<a target="_blank " href="JavaScript:; ">Ajax 实例</a>
+                    </dd>
+                    <dd>
+                        &middot;<a target="_blank " href="JavaScript:; ">jQuery 实例</a>
+                    </dd>
+                    <dd>
+                        &middot;<a target="_blank " href="JavaScript:; ">XML 实例</a>
+                    </dd>
+                    <dd>
+                        &middot;<a target="_blank " href="JavaScript:; ">Java 实例</a>
+                    </dd>
+
+                </dl>
+
+                <dl>
+                    <dt>
+                        字符集&工具
+                        </dt>
+                    <dd>
+                        &middot; <a target="_blank " href="JavaScript:; ">HTML 字符集设置</a>
+                    </dd>
+                    <dd>
+                        &middot; <a target="_blank " href="JavaScript:; ">HTML ASCII 字符集</a>
+                    </dd>
+                    <dd>
+                        &middot; <a target="_blank " href="JavaScript:; ">HTML ISO-8859-1</a>
+                    </dd>
+                    <dd>
+                        &middot; <a target="_blank " href="JavaScript:; ">HTML 实体符号</a>
+                    </dd>
+                    <dd>
+                        &middot; <a target="_blank " href="JavaScript:; ">HTML 拾色器</a>
+                    </dd>
+                    <dd>
+                        &middot; <a target="_blank " href="JavaScript:; ">JSON 格式化工具</a>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        最新更新
+                        </dt>
+                    <dd>
+                        &middot;
+                        <a href="JavaScript:; " title="Java 成员变量、类变量、局部变量的区别 ">Java 成员变量、...</a>
+                    </dd>
+                    <dd>
+                        &middot;
+                        <a href="JavaScript:; " title="Python 中关于 round 函数的小坑 ">Python 中关于 r...</a>
+                    </dd>
+                    <dd>
+                        &middot;
+                        <a href="JavaScript:; " title="JavaScript Console 对象 ">JavaScript Cons...</a>
+                    </dd>
+                    <dd>
+                        &middot;
+                        <a href="JavaScript:; " title="Linux 需要掌握的一些命令 ">Linux 需要掌握...</a>
+                    </dd>
+                    <dd>
+                        &middot;
+                        <a href="JavaScript:; " title="C 语言动态数组 ">C 语言动态数组</a>
+                    </dd>
+                    <dd>
+                        &middot;
+                        <a href="JavaScript:; " title="程序员的江湖，黑话一定要牢记 ">程序员的江湖，...</a>
+                    </dd>
+                    <dd>
+                        &middot;
+                        <a href="JavaScript:; " title="C++ vector 容器浅析 ">C++ vector 容器...</a>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>
+                        站点信息
+                        </dt>
+                    <dd>
+                        &middot;
+                        <a target="_blank " href="JavaScript:; " rel="external nofollow ">意见反馈</a>
+                    </dd>
+                    <dd>
+                        &middot;
+                        <a target="_blank " href="JavaScript:; ">免责声明</a>
+                    </dd>
+                    <dd>
+                        &middot;
+                        <a target="_blank " href="JavaScript:; ">关于我们</a>
+                    </dd>
+                    <dd>
+                        &middot;
+                        <a target="_blank " href="JavaScript:; ">文章归档</a>
+                    </dd>
+
+                </dl>
+
+                <div class="search-share ">
+                    <div class="app-download ">
+                        <div>
+                            <strong>关注微信</strong>
+                        </div>
+                    </div>
+                    <div class="share ">
+                        <img width="128 " height="128 " src="public/images/qrcode.png " />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-1000 copyright ">
+            Copyright &copy; 2013-2017 <strong><a href="JavaScript:; " target="_blank ">菜鸟教程</a></strong>&nbsp;
+            <strong><a href="JavaScript:; " target="_blank ">runoob.com</a></strong> All Rights Reserved. 备案号：闽ICP备15012807号-1
+        </div>
+    </div>
+
+    <div class="fixed-btn">
+        <a class="go-top" href="javascript:;" title="返回顶部 "> <i class="glyphicon glyphicon glyphicon-menu-up "></i></a>
+        <a class="qrcode" href="JavaScript:; " title="关注我们 "><i class="glyphicon glyphicon-qrcode "></i></a>
+        <a class="writer" target="_blank " href="JavaScript:; " style="font-size: 12px; " title="Bug 反馈 "><i class="glyphicon glyphicon-envelope " style="font-size: 20px;line-height:40px; "></i></a>
+        <!-- qrcode modal -->
+        <div class="hove" style="display:none;">
+            <h4>微信关注</h4>
+            <div class="ma"><img alt="微信关注 " width="128 " height="128 " src="public/images/qrcode.png "></div>
+        </div>
+    </div>
+
+    <script src="public/js/jquery-3.2.1.js "></script>
+    <script src="public/bootstrap-3.3.7-dist/js/bootstrap.min.js "></script>
+    <script src="public/js/zhuye.js"></script>
+    <script>
+        $('.fixed-btn .go-top').on('click', function(event) {
+            // alert(1);
+            event.preventDefault();
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
